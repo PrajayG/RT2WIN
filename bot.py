@@ -24,5 +24,14 @@ public_tweets = api.home_timeline()
 for tweet in public_tweets:
     print tweet.text
 
-def ManchesterUnited():
-	API.retweet(id)
+# def ManchesterUnited():
+# 	API.retweet(id)
+def RTsearch():
+	results = api.search('RT to win')
+	for x in results: 
+		print x.text
+
+
+
+RTsearch()
+
